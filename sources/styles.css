@@ -1,81 +1,81 @@
 body {
     margin: 0;
-    padding: 0;
-    font-family: Helvetica, Arial, sans-serif;
-    color: #666;
+    font-family: Poppins;
     background: #f2f2f2;
     font-size: 1em;
     line-height: 1.5em;
-}
-
-
-p {
-    margin: 0 0 1.5em 0;
+    width: 100vmax;
 }
 
 #main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #ffffff;
-    color: white;
-    height: 100px;
+    height: 134px;
     border-bottom: 2px #e9e3e3 solid;
     border-radius: 1%;
+    width: 100vmax;
 }
-
-#main-header a {
-    color: #030303;
-}
-
 /*
  * Logo
  */
 #logo-header {
+    display: flex;
     float: left;
-    padding: 15px 0 0 20px;
-    margin-left: 50px;
     text-decoration: none;
+}
+
+#logo-header img{
+    width: 134px;
+    height: 134px;
 }
 
 /*
  * Navegación
  */
 nav {
-    float: right;
+    display: flex;
+    margin-right: 80px;
+    margin-left: 30px;
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
-    padding-right: 20px;
 }
 
 nav ul li {
-    display: inline-block;
-    line-height: 80px;
+    display: inline;
 }
 
 nav ul li a {
-    display: block;
-    padding: 0 15px;
     text-decoration: none;
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: #090A0A;
+    padding: 0 15px;
+    
 }
 
 nav ul li a:hover {
-    background: #0b76a6;
+    color: #A6B99F;
 }
+nav ul li :visited {
+    color: #090A0A;
+}
+
+.rrss{
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+}
+
 
 #main-footer {
-    background: #333;
+    height: 327px;
+    width: 100vmax;
+    background: #A6B99F;
     color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-#main-footer p {
-    margin: 0;
-}
-
-#main-footer a {
-    color: white;
 }
