@@ -8,15 +8,16 @@
     margin-left: 5%;
     background-color: white;
     float: left;
-    width: 268px;
-    height: 212px;
+    width: 15.31%;
+    height: 26.33%;
     border-bottom-left-radius: 45px;
     border-bottom-right-radius: 45px ;
     align-items: center;
 }
 
 #img-turis img{
-    width: 100%;
+    width: 96.93%;
+    height: 91.98%;
     margin: auto;
     padding: auto;
 }
@@ -25,8 +26,8 @@
 #nosotros #text-nosotros{
     margin-top: 6%;
     background-color: #A34F20 ;
-    width: 56%;
-    height: 622px;
+    width: 56.64%;
+    height: 77%;
     border-top-left-radius: 66px;
     border-bottom-left-radius: 66px;
     float: right;
