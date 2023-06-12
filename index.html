@@ -2,8 +2,9 @@
 <html lang="es">
 
 <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/cssfamily=Poppins">
-    <link rel="stylesheet" href="sources/styles.css">
+    <link rel="stylesheet" href="sources/styles/fonts.css">
+    <link rel="stylesheet" href="sources/styles/styles.css">
+    <link rel="stylesheet" href="sources/styles/blocks.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -12,40 +13,71 @@
 
 <body>
     <header id="main-header">
-        <a id="logo-header" href="#">
-            <img src="sources/images/logo.png" alt="logo Envida">
-        </a>
+        <div id="logo-header">
+            <a href="#"><img src="sources/images/logo.png" alt="logo Envida"></a>
+        </div>
+        <div class="menu-bar">
+            <a href="#" class="bt-menu"><span class="icon-menu"></span>Menu</a>
+        </div>
         <!-- / #logo-header -->
-        <nav>
+        <nav class="enlaces">
             <ul>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Instalaciones</a></li>
-                <li><a href="#">Estancia</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#"><span class="icon-info"></span> Acerca de</a></li>
+                <li><a href="#"><span class="icon-office"></span> Instalaciones</a></li>
+                <li><a href="#"><span class="icon-nature_people"></span> Estancia</a></li>
+                <li><a href="#"><span class="icon-newspaper"></span> Blog</a></li>
+                <li><a href="#"><span class="icon-mail4"></span> Contacto</a></li>
             </ul>
         </nav><!-- / nav -->
-        <a href="https://instagram.com/envidaresidencia?igshid=MzRlODBiNWFlZA==" target="_blank"><img class="rrss"
-                src="sources/images/H-IG.png" alt="Instagram"></li></a>
-        <a href="https://www.facebook.com/ResidenciaEnvida?mibextid=ZbWKwL" target="_blank"><img class="rrss"
-                src="sources/images/H-FB.png" alt="Facebook"></li></a>
-        <a href="https://www.tiktok.com/@residenciaenvida?_op=1&_r=1&_t=8d2iyGTIJZ0" target="_blank"><img class="rrss"
-                src="sources/images/H-TT.png" alt="Tiktok"></li></a>
+        <div class="redes">
+            <div class="logo-rrss"><a href="https://instagram.com/envidaresidencia?igshid=MzRlODBiNWFlZA==" target="_blank"><img class="rrss"
+                src="sources/images/H-IG.png" alt="Instagram"></li></a></div>
+            <div class="logo-rrss"><a href="https://www.facebook.com/ResidenciaEnvida?mibextid=ZbWKwL" target="_blank"><img class="rrss"
+                src="sources/images/H-FB.png" alt="Facebook"></li></a></div>
+            <div class="logo-rrss"><a href="https://www.tiktok.com/@residenciaenvida?_op=1&_r=1&_t=8d2iyGTIJZ0" target="_blank"><img class="rrss"
+                src="sources/images/H-TT.png" alt="Tiktok"></li></a></div>
+        </div>
+        
     </header><!-- / #main-header -->
+    <div class="contenido">
+        <section id="slides">
+            <p>
+    
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis eros nec convallis vulputate. Aenean eget gravida lacus. Fusce elementum quis nisl non pulvinar. Vivamus interdum leo eu lorem sollicitudin, id accumsan lacus luctus. Donec tempus est sit amet ex vulputate, non ultrices nisi faucibus. In in massa turpis. Quisque vel fermentum dolor. Etiam eu convallis augue.
+                
+                Curabitur nisl libero, euismod quis sapien eu, eleifend lobortis ipsum. Integer quis metus orci. Aenean tempor vitae eros ac tempus. Vivamus pretium lacus sed sem condimentum, in commodo lacus condimentum. Nulla congue, lorem at auctor condimentum, dolor leo tempus metus, non fringilla lectus quam vitae nibh. Phasellus vel leo nec neque consectetur tempus vitae a neque. Vestibulum semper sodales sem a fermentum. Nulla felis orci, eleifend eu suscipit eget, accumsan ut urna. Vivamus dapibus faucibus nisi at mattis. Sed quis purus bibendum, suscipit mi vel, tempus neque. Aliquam nec gravida turpis.
+                
+                Nam ex arcu, fringilla vel magna et, placerat semper dolor. Ut viverra diam vel justo pulvinar, quis consectetur augue consectetur. In hac habitasse platea dictumst. In sem sapien, ornare vitae diam iaculis, consequat sagittis mi. Praesent sit amet maximus mauris, nec gravida dolor. Aliquam sagittis, libero sit amet elementum vestibulum, lectus elit facilisis purus, quis porttitor magna purus eu nunc. Praesent egestas odio sit amet viverra faucibus. Nullam luctus nisi id tortor malesuada, vel elementum massa vestibulum. Fusce varius at tellus non suscipit. Etiam sit amet blandit est. Donec dolor elit, mollis eget pharetra vitae, molestie id mi.
+                
+                Aliquam imperdiet consectetur mauris, at commodo nisl interdum eu. Praesent at lorem sed quam dignissim pellentesque vel a velit. Nullam mi nunc, faucibus sit amet lobortis sit amet, egestas vitae turpis. Integer pulvinar ultrices enim et tempus. Vivamus lobortis dictum neque. Cras sit amet egestas augue. Donec augue nulla, elementum at luctus vitae, rhoncus vitae lectus.
+                
+                Etiam eu libero a sem commodo fermentum. Pellentesque pulvinar convallis purus, vitae hendrerit augue ullamcorper a. Sed quis feugiat dolor, vel bibendum orci. Integer imperdiet mauris risus, nec suscipit magna luctus id. Duis auctor lobortis congue. Fusce iaculis, ex vitae consectetur faucibus, sapien nisi interdum est, quis convallis erat ligula sit amet ipsum. Aenean scelerisque lacinia ornare. Donec cursus, risus ut mattis dapibus, eros tellus semper libero, sed varius nisi elit et metus. Proin a eros ac ex euismod bibendum vitae at nisl. Duis ac consequat tellus. Vestibulum feugiat metus nec scelerisque pretium. Nullam dignissim est in velit malesuada eleifend. Quisque et elit lobortis mauris ornare ullamcorper. Sed a aliquet diam. Vivamus eu lacinia leo.
+                Generated 5 paragraphs, 417 words, 2779 bytes of Lorem Ipsum</p>
+    
+        </section> 
+        <!-- / #main-content -->
+    
+        <section class="nosotros">
+            <div id="nosotros">
+                <div id="img-turis"><img src="sources/images/nosotros/H-04 -turis.png" alt=""></div>
+                <div id="text-nosotros"></div>
+            </div>
+        </section>
+    
+        
+    </div>
+    <footer class="footer">
+        <section class="main-footer">
 
+        </section>
+        <section class="convenios">
 
-    <section id="main-content">
-
-
-
-    </section> <!-- / #main-content -->
-
-
-
-    <footer id="main-footer">
-        <p>&copy; 2023 <a href="http://residenciaenvida.com">residenciaenvida.com</a></p>
+        </section>
+    
     </footer> <!-- / #main-footer -->
 
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="sources/menu4.js"></script>
 </body>
 
 </html>
