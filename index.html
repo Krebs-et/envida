@@ -5,6 +5,9 @@
     <link rel="stylesheet" href="sources/styles/fonts.css">
     <link rel="stylesheet" href="sources/styles/styles.css">
     <link rel="stylesheet" href="sources/styles/blocks.css">
+    <link rel="stylesheet" href="sources/styles/slider.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -22,11 +25,11 @@
         <!-- / #logo-header -->
         <nav class="enlaces">
             <ul>
-                <li><a href="#"><span class="icon-info"></span> Acerca de</a></li>
-                <li><a href="#"><span class="icon-office"></span> Instalaciones</a></li>
-                <li><a href="#"><span class="icon-nature_people"></span> Estancia</a></li>
-                <li><a href="#"><span class="icon-newspaper"></span> Blog</a></li>
-                <li><a href="#"><span class="icon-mail4"></span> Contacto</a></li>
+                <li><a href="pages/about.html"><span class="icon-info"></span><br>Acerca de</a></li>
+                <li><a href="pages/instalaciones.html"><span class="icon-office"></span><br>Instalaciones</a></li>
+                <li><a href="pages/estancia.html"><span class="icon-nature_people"></span><br>Estancia</a></li>
+                <li><a href="pages/blog.html"><span class="icon-newspaper"></span><br>Blog</a></li>
+                <li><a href="pages/contacto.html"><span class="icon-mail4"></span><br>Contacto</a></li>
             </ul>
         </nav><!-- / nav -->
         <div class="redes">
@@ -39,42 +42,197 @@
         </div>
         
     </header><!-- / #main-header -->
-    <div class="contenido">
-        <section id="slides">
-            <p>
-    
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis eros nec convallis vulputate. Aenean eget gravida lacus. Fusce elementum quis nisl non pulvinar. Vivamus interdum leo eu lorem sollicitudin, id accumsan lacus luctus. Donec tempus est sit amet ex vulputate, non ultrices nisi faucibus. In in massa turpis. Quisque vel fermentum dolor. Etiam eu convallis augue.
-                
-                Curabitur nisl libero, euismod quis sapien eu, eleifend lobortis ipsum. Integer quis metus orci. Aenean tempor vitae eros ac tempus. Vivamus pretium lacus sed sem condimentum, in commodo lacus condimentum. Nulla congue, lorem at auctor condimentum, dolor leo tempus metus, non fringilla lectus quam vitae nibh. Phasellus vel leo nec neque consectetur tempus vitae a neque. Vestibulum semper sodales sem a fermentum. Nulla felis orci, eleifend eu suscipit eget, accumsan ut urna. Vivamus dapibus faucibus nisi at mattis. Sed quis purus bibendum, suscipit mi vel, tempus neque. Aliquam nec gravida turpis.
-                
-                Nam ex arcu, fringilla vel magna et, placerat semper dolor. Ut viverra diam vel justo pulvinar, quis consectetur augue consectetur. In hac habitasse platea dictumst. In sem sapien, ornare vitae diam iaculis, consequat sagittis mi. Praesent sit amet maximus mauris, nec gravida dolor. Aliquam sagittis, libero sit amet elementum vestibulum, lectus elit facilisis purus, quis porttitor magna purus eu nunc. Praesent egestas odio sit amet viverra faucibus. Nullam luctus nisi id tortor malesuada, vel elementum massa vestibulum. Fusce varius at tellus non suscipit. Etiam sit amet blandit est. Donec dolor elit, mollis eget pharetra vitae, molestie id mi.
-                
-                Aliquam imperdiet consectetur mauris, at commodo nisl interdum eu. Praesent at lorem sed quam dignissim pellentesque vel a velit. Nullam mi nunc, faucibus sit amet lobortis sit amet, egestas vitae turpis. Integer pulvinar ultrices enim et tempus. Vivamus lobortis dictum neque. Cras sit amet egestas augue. Donec augue nulla, elementum at luctus vitae, rhoncus vitae lectus.
-                
-                Etiam eu libero a sem commodo fermentum. Pellentesque pulvinar convallis purus, vitae hendrerit augue ullamcorper a. Sed quis feugiat dolor, vel bibendum orci. Integer imperdiet mauris risus, nec suscipit magna luctus id. Duis auctor lobortis congue. Fusce iaculis, ex vitae consectetur faucibus, sapien nisi interdum est, quis convallis erat ligula sit amet ipsum. Aenean scelerisque lacinia ornare. Donec cursus, risus ut mattis dapibus, eros tellus semper libero, sed varius nisi elit et metus. Proin a eros ac ex euismod bibendum vitae at nisl. Duis ac consequat tellus. Vestibulum feugiat metus nec scelerisque pretium. Nullam dignissim est in velit malesuada eleifend. Quisque et elit lobortis mauris ornare ullamcorper. Sed a aliquet diam. Vivamus eu lacinia leo.
-                Generated 5 paragraphs, 417 words, 2779 bytes of Lorem Ipsum</p>
-    
-        </section> 
+         
         <!-- / #main-content -->
-    
-        <section class="nosotros">
+
+        <section class="content">
+            <div class="container__slider">
+
+                <div class="container">
+                    <input type="radio" name="slider" id="item-1" checked>
+                    <input type="radio" name="slider" id="item-2">
+                    <input type="radio" name="slider" id="item-3">
+        
+                    <div class="cards">
+                        <label class="card" for="item-1" id="selector-1">
+                            <img src="sources/images/slides/H-01.jpg">
+                        </label>
+                        <label class="card" for="item-2" id="selector-2">
+                            <img src="sources/images/slides/H-02.jpg">
+                        </label>
+                        <label class="card" for="item-3" id="selector-3">
+                            <img src="sources/images/slides/H-03.jpg">
+                        </label>
+        
+                    </div>
+                </div>
+        
+            </div>
             <div id="nosotros">
                 <div id="img-turis"><img src="sources/images/nosotros/H-04 -turis.png" alt=""></div>
-                <div id="text-nosotros"></div>
+                <div id="text-nosotros"><p class="p-title"><span class="icon-people_alt"></span>Nosotros</p>
+                        
+                <p class="p-subtitle">!Bienvenidos a Residencia <br> Envida para adultos mayores!</p>
+                        
+                <div class="p-nosotros">
+                    <p>
+                        <br>Somos la primera residencia para adultos mayores en el país en obtener el sello de turismo de salud, nos destacamos por ofrecer un plan médico integral sin costo, único en el cuidado de nuestros residentes.
+                    </p>
+                    <p>
+                        <br>
+                        Nuestros servicios abarcan estancias de día, 24 horas y permanentes, para adaptarnos a las necesidades de nuestros residentes y sus familias.
+                    </p>
+                </div>
+                </div>
+            
+               <div class="vid-container"><video id="nosotros-vid" width="100%" height="100%"src="sources/video/Video.mp4" loading="lazy" type="video/mp4" controls autobuffered poster="sources/video/poster.jpg">Video envida</video></div> 
             </div>
-        </section>
-    
-        
-    </div>
-    <footer class="footer">
-        <section class="main-footer">
+            
+            <div class="estancia">
+                    <h1>
+                        <span class="icon-home1"></span> Estancia
+                    </h1>
+                    <ul class="text-estancia">
+            
+                        <li>Nuestros servicios de atención médica y cuidado al adulto mayor se adaptan a diferentes necesidades, ya sea para estancias diarias, temporales o permanentes.</li>
+                                      
+                        <li>Capacitamos a nuestro equipo de forma continua y nuestras instalaciones están diseñadas para ser inclusivas.</li> 
+                        
+                        
+                        <li>La ubicación en el cálido clima de Morelos proporciona a nuestros residentes una estancia similar a unas vacaciones.</li>
+                        
+                        
+                    </ul>
+                    <img class="img1" src="sources/images/estancia/H-05.JPG" alt="Activación física">
+                    <img class="img2" src="sources/images/estancia/H-06.JPG" alt="Actividades al aire">
+                    <ul class="buttons">
+                        <a href="pages/estancia.html">Estancia de día</a>
+                        <a href="pages/estancia.html">Día envida</a>
+                        <a href="pages/estancia.html">Estancia permanente</a>
+                    </ul>
+                <div class="beige"></div>
+                <div class="orange"></div>
+            </div>
+            
+            <div class="plan-mi">
+                <h1 class="botiquin">
+                    <span class="icon-aid-kit"></span>
+                </h1>
+                <h1 class="pmi-title"> Plan médico <br>integral</h1>
+                <ul>
+                    <li>Consulta de medicina general.</li>
+                    <li>Consulta de especialidad.</li>
+                    <li>Rayos X simples.</li>
+                    <li>Traslado ambulancia.</li>
+                    <li>Corta estancia.</li>
+                    <li>Nutrición.</li>
+                    <li>Enfermería.</li>
+                    <li>Análisis clínicos.</li>
+                    <li>Ultrasonidos básicos.</li>
+                    <li>Terapia física y de movimiento.</li>
+                    <li>Psicología.</li>
+                </ul>
+                <img src="sources/images/plan mi/H-07.jpg" alt="Chequeo médico">
+                <div class="orange2"></div>
+                <div class="blue"></div>
+                <a class="otros-link" href="pages/plan_mi.html" style="position: absolute;" >Más detalles</a>
+            </div>
+            
+            <div class="location"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3775.996126280304!2d-99.22157992403105!3d18.8428400592493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdd8c249ff551f%3A0xf80744b2bc60a909!2sResidencia%20Envida!5e0!3m2!1ses-419!2smx!4v1686755343083!5m2!1ses-419!2smx"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="text-location"><p><span class="icon-location"></span><br>¡Conoce nuestras Instalaciones!<br>
+            <a href="pages/contacto.html">Contáctanos</a>
+            </p>
+            
+            </div>
+            
+            </div>
 
-        </section>
-        <section class="convenios">
+            <div class="blog">
+                <div class="entrada">
+                    <a href="pages/entrada1.html">
+                        <img src="sources/images/blog/H-08.JPG" alt="Texto alternativo de la imagen">
+                    </a>
+                    <h1 style=" left: 5%; top: 60%; position: absolute; z-index: 1 ;">Promoviendo la independ...</h1>
+                    <p style=" left: 5%; top: 65%; position: absolute; z-index: 1 ; font-size: 2vw;">Promoviendo la <br>independencia en la <br>tercera edad</p>
+                    <a href="pages/entrada1.html" style="text-decoration: none;
+                    display: block;
+                    background-color: #E8E8E8;
+                    position: absolute;
+                    color: #090A0A;
+                    padding: 1%;
+                    border-radius: 30px;
+                    border: solid 1px;
+                    font-size: 1vw;;
+                    height: fit-content;
+                    width: fit-content;
+                    top: 70%;
+                    left: 30%;"
+                    >Leer más.</a>
+                </div>       
+                
+                <div class="entrada">
+                    <a href="pages/entrada2.html">
+                        <img src="sources/images/blog/H-09.jpg" alt="Texto alternativo de la imagen">
+                    </a>
+                    <h1 style=" left: 55%; top: 60%; position: absolute; z-index: 1 ;">5 comidas</h1>
+                    <p style=" left: 55%; top: 65%; position: absolute; z-index: 1 ; font-size: 2vw;">Alimentación saludable <br>para adultos mayores.</p>
+                    <a href="pages/entrada2.html" style="text-decoration: none;
+                    display: block;
+                    background-color: #E8E8E8;
+                    position: absolute;
+                    color: #090A0A;
+                    padding: 1%;
+                    border-radius: 30px;
+                    border: solid 1px;
+                    font-size: 1vw;;
+                    height: fit-content;
+                    width: fit-content;
+                    top: 70%;
+                    left: 80%;"
 
-        </section>
+                    >Leer más</a>
+                </div>
+
+            </div>
+
+        <footer>
+                <section class="main-footer">
+                <img id="mega" src="sources/images/footer/H-09-mega.png" alt="Mega Salud">
+                <img id="turismo" src="sources/images/footer/H-04 -turis.png" alt="Turismo de Salud">
+                <ul class="footer-nav1">
+                    <li><a href="pages/inicio.html">Inicio</a></li>
+                    <li><a href="pages/about.html">Acerca de</a></li>
+                    <li><a href="pages/estancia.html">Plan de estancia</a></li>
+                    <li><a href="pages/instalaciones.html">Instalaciones</a></li>
+                    <li><a href="pages/contacto.html">Contacto</a></li>
+                </ul>
+
+                <ul class="footer-nav2">
+                    <li><a href="pages/blog.html">Blog</a></li>
+                    <li><a href="pages/vacantes.html">Vacantes</a></li>
+                    <li><a href="pages/referidos.html">Referidos Envida</a></li>
+                </ul>
+                <ul class="footer-redes">
+                    <a href=""><img class="footer-rs-ico" src="sources/images/H-IG.png" alt="IG"></a>
+                    <a href=""><img class="footer-rs-ico" src="sources/images/H-FB.png" alt="FB"></a>   
+                    <a href=""><img class="footer-rs-ico" src="sources/images/H-TT.png" alt="Tiktok"></a>
+                </ul>
+                <a class="privacidad"href="/pages/privacy.html">Aviso de Privacidad</a>
+                <p>Av. Miguel Hidalgo #30 col. Centro, Temixco, Mor.</p>
+
+                </section>
+                <section class="convenios">
+                    <img id="FR" src="sources/images/footer/H-C-1.png" alt="Forma Radical">
+                    <img id="SD" src="sources/images/footer/H-C-2.jpg" alt="SaluDent">
+                    <img id="BP" src="sources/images/footer/H-C-3.png" alt="Blue Point">
+                    <img id="UAEM" src="sources/images/footer/H-C-4.svg" alt="UAEM">
+                    <img id="TM" src="sources/images/footer/H-C-5.png" alt="TurisMor">
+                </section>
+        </footer> <!-- / #main-footer -->
+        </section class="content">
     
-    </footer> <!-- / #main-footer -->
+    
+    
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="sources/menu4.js"></script>

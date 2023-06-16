@@ -1,11 +1,13 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: Poppins;
+    
 }
 
 body{
-    background-color: rgb(219, 219, 219);
+    width: 100%;
+    background-color: white;
 }
 
 #main-header {
@@ -16,6 +18,7 @@ body{
     border-bottom: solid 3px;
     border-radius: 2%;
     border-color: rgb(163, 165, 165);
+    z-index: 5;
 }
 /*
  * Logo
@@ -43,7 +46,7 @@ body{
 }
 
 .enlaces ul {
-    padding-top: 3%;
+    margin-top: 3%;
     display: flex;
     overflow: hidden;
     list-style: none;
@@ -58,7 +61,7 @@ body{
     text-decoration: none;
     display: block;
     color: #090A0A;
-    padding: 40px 20px;
+    padding: 20px 20px;
     font-size: 17px;
 }
 
@@ -94,38 +97,7 @@ body{
     display: none;
 }
 
-.contenido{
-    margin: auto;
-    display: block;
-    justify-content: center;
-    text-align: center;
-    background-color: white;
-    width:100%;
-    height: 100%;
-
-}
-#slides{
-    display: block;
-    padding-top: 142px;
-}
-
-.main-footer {
-    height: 350px;
-    width: 100%;
-    background: #A6B99F;
-    color: white;
-    text-align: center;
-}
-
-.convenios{
-    height: 42px;
-    background-color: white;
-}
-
-
-
 @media screen and (max-width:1000px){
-
     #main-header{
         position: fixed;
     }
@@ -152,7 +124,7 @@ body{
 
     .enlaces ul li a {
         display: block;
-        padding: 20px
+        padding: 30px;
     }
 
     #logo-header{
@@ -196,23 +168,208 @@ body{
         color: #A6B99F;
     }
 
-    #slides{
-        display: block;
-        padding-top: 0;
+    .content{
+       position: relative;
+       top: 142px;
     }
-
     
 }    
 
+/* ---- ACERCA DE -----*/
+.who{
+    position: relative;
+    width: 100%;
+    height: 42.9vw;
+    overflow: hidden;
+}
+
+.p-who{
+    background-color: #BE7833;
+    position: absolute;
+    width: 65.39%;
+    height: 100%;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    z-index: 1;
+    color: white;
+    z-index: 2;
+}
+
+.t-who{
+    color: white;
+    position: absolute;
+    font-size: 6vw;
+    z-index: 2;
+    left: 68%;
+    top: 36%;
+    font-weight: bold;
+    line-height: 5.2vw;
+}
+
+.p-who p{
+    margin-top: 2%;
+    margin-left: 10%;
+    width: 70%;
+    font-size: 1.6vw;
+}
+
+.who img{
+    position: absolute;
+    width: 45.15%;
+    object-fit: cover;
+    height: 100%;
+    left: 56%;
+    filter: brightness(50%);
+
+}
+
+.us{
+    overflow: hidden;
+    margin-top: 5%;
+    position: relative;
+    width: 100%;
+    height: 34.6vw;
+}
+
+.p-us{
+    background-color: #BE7833;
+    left: 34.5%;
+    position: absolute;
+    width: 65.39%;
+    height: 100%;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    z-index: 1;
+    color: white;
+    z-index:4;
+}
+
+.t-us{
+    color: white;
+    position: absolute;
+    font-size: 6vw;
+    z-index: 2;
+    top: 40%;
+    font-weight: bold;
+    line-height: 5.2vw;
+    left: 3%;
+}
+
+
+
+.p-us p{
+    margin-top: 4%;
+    margin-left: 10%;
+    width: 70%;
+    font-size: 1.5vw;
+    z-index: 5;
+}
+
+.us img{
+    left: -2%;
+    position: absolute;
+    width: 45.15%;
+    object-fit: cover;
+    height: 100%;
+    filter: brightness(50%);
+
+}
+
+.right-logo{
+    position: absolute;
+    width: 73.75vw;
+    height: 60.07vw;
+    z-index: 9;
+    top: 7%;
+    left: -35%;
+    transform: rotate(180deg);
+    opacity: 35%;
+    z-index: 1;
+}
+
+.left-logo{
+    position: absolute;
+    width: 73.75vw;
+    height: 60.07vw;
+    top: 22%;
+    left: 60%;
+    z-index: 3;
+    opacity: 30%;
+}
+
+.valores
+{   
+    padding-left: 3%;
+    padding-top: 5%;
+    justify-content: center;
+    width: 100%;
+    height: 39vw;
+}
+
+.valores .bloque{
+    margin-right:5%;
+    float: left;
+    width: 27.6%;
+    height: 25.54%;
+    text-align: justify;
+    font-size: 1.9vw;
+}
+
+.valores .bloque p{
+    border-bottom: solid ;
+    border-bottom: outset 0.2vw;
+    border-right: outset 0.09vw;
+    border-radius: 3px ;
+    border-color: #d8d7d77a;
+    padding-right: 1%;
+
+}
+
+/* OTROS SERVICIOS */
+
+.cuadricula table{
+    text-align: center;
+    margin-top: 3%;
+    width: 100%;
+}
+
+.cuadricula img{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 23.4vw;
+    height: 23.4vw;
+}
+
+.cuadricula a{
+    text-decoration: none;
+    display: block;
+    background-color: #E8E8E8;
+    color: #090A0A;
+    padding: 1%;
+    border-radius: 30px;
+    border: solid 1px;
+    font-size: 1.7vw;
+}
+
+
+.t-img {
+    background-color: #090A0A;
+    filter: opacity(80%);
+    color: white;
+    width: 23.43vw;
+    height: 3.34vw;
+    font-size: 2vw;
+}
+
+
+
 @media  screen and (max-width:1000px) and (max-height:600px){
     #main-header{
-        position: fixed;
         height: 80px;
+        z-index: 8;
     }
 
-
     .enlaces{
-        position: fixed;
         padding-top: 60px;
     }
     .enlaces ul{
