@@ -2,211 +2,282 @@
 <html lang="es">
 
 <head>
-    <link rel="icon" href="../favicon.ico" type="image/x-icon" sizes="16px">
-    <link rel="stylesheet" href="../sources/styles/fonts.css">
-    <link rel="stylesheet" href="../sources/styles/styles.css">
-    <link rel="stylesheet" href="../sources/styles/blocks.css">
-    <link rel="stylesheet" href="../sources/styles/slider.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Planes de Estancia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!--bootstrap 5.3.1-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
-    <style>
-        .show{
-            overflow: hidden;
-        }
-        .content .one{
-            width: 23.43vw;
-            height: 23.43vw;
-            object-fit: cover;
-            position: absolute;
-            z-index: 2;
-        }
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-        .banner{
-            position: absolute;
-            text-align: right;
-            color: #f2f2f2;
-            font-size: 1.8vw;
-            font-weight: bold;
-            margin-left: 10%;
-            background-color: #BE7833;
-            width: 25%;
-            border-top-right-radius: 30px;
-            border-bottom-right-radius: 30px;
-            padding-right: 1%;
-            margin-bottom: 15%;
-            top: 20%;
-        }
+    <!-- Google Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,-25" />
 
-        .fondo{
-            position: absolute;
-            z-index: 1;
-            top: -20%;
-            left: 7.4%;
-            opacity:15%;
-            height: 195vw;
-            width: 195vw;
-        }
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="../static/style.css">
 
-        h3{
-            position: absolute;
-            font-size: 1.8vw;
-            left: 20%;
-            top: 23%;
+    <!--FAVICON-->
 
-        }
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/img/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
 
-        h4{
-            position: absolute;
-            font-size: 1.8vw;
-            margin-left: 40%;
-            top: 20%;
-        }
-
-        .show ul{
-            font-size: 1.2vw;
-            margin-left: 20%;
-            margin-top: 20%;
-        }
-    </style>
 </head>
 
 <body>
-    <header id="main-header">
-        <div id="logo-header">
-            <a href="../index.html"><img src="../sources/images/logo.png" alt="logo Envida"></a>
+
+    <!-- Header -->
+
+    <nav class="navbar border-bottom border-3 sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="col"><a href="../index.html">
+                    <img src="../static/img/headerFooter/logo.png" alt="Logo Envida" width="100" height="100">
+                </a></div>
+            <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav col">
+                    <a class="nav-link mx-4 ms-md-5" aria-current="page" href="../pages/about.html"><i
+                            class="bi bi-info-circle"></i> Acerca
+                        de</a>
+                    <a class="nav-link mx-4" aria-current="page" href="../pages/instalaciones.html"><i
+                            class="bi bi-buildings"></i>
+                        Instalaciones</a>
+                    <a class="nav-link mx-4" aria-current="page" href="../pages/estancia.html"><i
+                            class="bi bi-houses"></i>
+                        Estancia</a>
+                    <a class="nav-link mx-4" aria-current="page" href="../pages/blog.html"><i
+                            class="bi bi-newspaper"></i>
+                        Blog</a>
+                    <a class="nav-link mx-4 me-md-2" aria-current="page" href="../pages/contacto.html"><i
+                            class="bi bi-telephone-outbound"></i>
+                        Contacto</a>
+                    <div class="col text-center mt-2">
+                        <a class="mx-2" href="https://www.facebook.com/ResidenciaEnvida?mibextid=ZbWKwL" target="blank"
+                            style="text-decoration: none;">
+                            <img src="../static/img/headerFooter/H-FB.png" alt="" width="24px" height="24px">
+                        </a>
+                        <a class="mx-2" href="https://instagram.com/residenciaenvida?igshid=MzRlODBiNWFlZA=="
+                            target="blank" style="text-decoration: none;">
+                            <img src="../static/img/headerFooter/H-IG.png" alt="" width="24px" height="24px">
+                        </a>
+                        <a class="mx-2" href="https://www.tiktok.com/@residenciaenvida?_op=1&_r=1&_t=8d2iyGTIJZ0"
+                            target="blank" style="text-decoration: none;">
+                            <img src="../static/img/headerFooter/H-TT.png" alt="" width="24px" height="24px">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="menu-bar">
-            <a href="#" class="bt-menu"><span class="icon-menu"></span>Menu</a>
+    </nav>
+
+    <section id="estancia" class="container position-relative pt-3 overflow-hidden">
+
+        <div id="headerLiving" class="row justify-content-center">
+            <div class="col offset-1 align-self-center">
+                <h1 class="lh-1">Estancia</h1>
+                <h5 class="lh-1"><em> Envida</em></h5>
+            </div>
         </div>
-        <!-- / #logo-header -->
-        <nav class="enlaces">
-            <ul>
-                <li><a href="../pages/about.html"><span class="icon-info"></span><br>Acerca de</a></li>
-                <li><a href="../pages/instalaciones.html"><span class="icon-office"></span><br>Instalaciones</a></li>
-                <li><a href="../pages/estancia.html"><span class="icon-nature_people"></span><br>Estancia</a></li>
-                <li><a href="../pages/blog.html"><span class="icon-newspaper"></span><br>Blog</a></li>
-                <li><a href="../pages/contacto.html"><span class="icon-mail4"></span><br>Contacto</a></li>
+
+        <div class="row justify-items-center mt-4">
+            <div class="tipoEstancia col-md-4 col text-end rounded-end-pill">
+                <h4  class="p-2">Estancia de dia</h4>
+            </div>
+            <div class="col">
+                <h4 class="p-2">08:00 a 16:00</h4>
+            </div>
+
+            <div id="contenidoDia" class="row py-4">
+                <ul class="offset-2 col">
+                    <h4 class="mb-4">Incluye: </h4>
+                    <li>Alimentos: Desayuno, Comida y una colacion</li>
+                    <li>Actividades: Terapia de movimiento, ocupacional, lectura, cine, etc.</li>
+                    <li>Servicio de enfermeria y paramedicos durante su estancia</li>
+                    <li>Vigilancia</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="" class="row justify-items-center mb-4">
+            <div class="tipoEstancia col-md-4 col text-end rounded-end-pill">
+                <h4 class="p-2">Dia Envida</h4>
+            </div>
+            <div class="col">
+                <h4 class="p-2">24 hrs.</h4>
+            </div>
+
+            <div id="contenidoDia" class="row my-2">
+                <ul class="offset-2 col">
+                    <h4 class="my-4">Incluye:</h4>
+                    <li>Alimentos: Desayuno, Comida y dos colaciones</li>
+                    <li>Actividades: Terapia de movimiento, ocupacional, lectura, cine, etc.</li>
+                    <li id="permanente">Consulta de medicina general (de ser requerida)</li>
+                    <li>Habitacion</li>
+                    <li >Vigilancia las 24 horas</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div  class="row justify-items-center mb-4">
+            <div class="tipoEstancia col-md-4 col text-end rounded-end-pill">
+                <h4 class="p-2">Permanente</h4>
+            </div>
+            <div class="col">
+                <h4 class="p-2">Mensual</h4>
+            </div>
+            <div id="contenidoDia" class="row mt-2">
+                <ul class="offset-2 col">
+                    <h4 class="my-4">Incluye:</h4>
+                    <li><a href="plan_mi.html"
+                            class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Plan
+                            medico integral</a></li>
+                    <li>Todos los servicios de estancia.</li>
+                    <li>Actividades: Terapia de movimiento, ocupacional, lectura, cine, etc.</li>
+                    <li>Suministro de medicamentos</li>
+                    <li>Habitacion</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="carousel_sm" class="d-lg-none d-block carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../static/img/living_room/Es-01.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../static/img/living_room/Es-03.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../static/img/living_room/H-05.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../tatic/img/living_room/H-06.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel_sm" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel_sm" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="imagenEstancia_lg row position-absolute d-none d-lg-block top-0 end-0 z-1">
+            <img id="img4" class="object-fit-cover" src="../static/img/living_room/Es-01.jpg" alt="Actividades acuaticas">
+        </div>
+        <div class="imagenEstancia_lg row position-absolute d-none d-lg-block top-0 end-0 z-1">
+            <img id="img3" class="object-fit-cover" src="../static/img/living_room/Es-03.jpg"
+                alt="Actividades al aire libre">
+        </div>
+        <div class="imagenEstancia_lg row position-absolute d-none d-lg-block top-0 end-0 z-1">
+            <img id="img2" class="object-fit-cover" src="../static/img/living_room/H-05.jpg" alt="Amplias habitaciones">
+        </div>
+        <div class="imagenEstancia_lg row position-absolute d-none d-lg-block top-0 end-0 z-1">
+            <img id="img1" class="object-fit-cover" src="../static/img/living_room/H-06.jpg" alt="Areas recreativas">
+        </div>
+
+        <img id="fondoEstancia" class="position-absolute top-0 end-0 z-0" src="../static/img/logoBg.png" alt="Logo Envida">
+
+    </section>
+
+
+
+<!-- Footer -->
+
+<footer class="container-fluid pt-2 d-block">
+    <div class="row py-2" style="background-color: #A6B99F; font-size:1.8vw;">
+        <div class="col-6">
+            <div class="row  my-3 justify-content-center">
+                <div class="col-5 col-lg-3"><a href=""><img class="img-fluid"
+                            src="../static/img/headerFooter/H-09-mega.png" alt="Mega Salud"></a></div>
+                <div class="col-5 col-lg-3"><a href=""><img class="img-fluid"
+                            src="../static/img/headerFooter/H-04-turis.png" alt="Turismo"></a></div>
+            </div>
+            <div class="row text-center"><a class="nav-link" href="http://" target="_blank"
+                    rel="noopener noreferrer">Av.
+                    Miguel Hidalgo #30 col. Centro,
+                    Temixco, Mor.</a></div>
+        </div>
+        <div class="col-3">
+
+            <ul class="list-unstyled">
+                <li><a class="nav-link" style="width: fit-content;" href="../index.html">Inicio</a></li>
+                <li><a class="nav-link" style="width: fit-content;" href="../pages/about.html">Acerca de</a></li>
+                <li><a class="nav-link" style="width: fit-content;" href="../pages/estancia.html">Plan de
+                        Estancia<a>
+                </li>
+                <li><a class="nav-link" style="width: fit-content;"
+                        href="../pages/instalaciones.html">Instalaciones</a>
+                </li>
+                <li><a class="nav-link" style="width: fit-content;" href="../pages/contacto.html">Contacto</a></li>
             </ul>
-        </nav><!-- / nav -->
-        <div class="redes">
-            <div class="logo-rrss"><a href="https://instagram.com/envidaresidencia?igshid=MzRlODBiNWFlZA==" target="_blank"><img class="rrss"
-                src="../sources/images/H-IG.png" alt="Instagram"></li></a></div>
-            <div class="logo-rrss"><a href="https://www.facebook.com/ResidenciaEnvida?mibextid=ZbWKwL" target="_blank"><img class="rrss"
-                src="../sources/images/H-FB.png" alt="Facebook"></li></a></div>
-            <div class="logo-rrss"><a href="https://www.tiktok.com/@residenciaenvida?_op=1&_r=1&_t=8d2iyGTIJZ0" target="_blank"><img class="rrss"
-                src="../sources/images/H-TT.png" alt="Tiktok"></li></a></div>
         </div>
-        
-    </header>
+        <div class="col-3">
+            <div class="row">
+                <ul class="list-unstyled">
+                    <li><a class="nav-link" style="width: fit-content;" href="../pages/blog.html">Blog</a></li>
+                    <li><a class="nav-link" style="width: fit-content;" href="../pages/vacantes.html">Vacantes</a>
+                    </li>
+                    <li><a class="nav-link" style="width: fit-content;" href="../pages/referidos.html">Referidos
+                            Envida</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col col-md-2">
+                    <a href="https://www.facebook.com/ResidenciaEnvida?mibextid=ZbWKwL" target="blank"><img
+                            class="img-fluid" src="../static/img/headerFooter/H-FB.png" alt="Facebook"></a>
+                </div>
+                <div class="col col-md-2 mx-md-3">
+                    <a href="https://instagram.com/residenciaenvida?igshid=MzRlODBiNWFlZA==" target="blank"><img
+                            class="img-fluid me-sm-4" src="../static/img/headerFooter/H-IG.png" alt="Instagram"></a>
+                </div>
+                <div class="col col-md-2">
+                    <a href="https://www.tiktok.com/@residenciaenvida?_op=1&_r=1&_t=8d2iyGTIJZ0" target="blank"><img
+                            class="img-fluid" src="../static/img/headerFooter/H-TT.png" alt="TikTok"></a>
+                </div>
 
-<section class="content" style="padding-top: 5%; overflow: hidden;">
-
-    <div class="show" style="height: 100vw; position: relative; overflow: hidden;">
-
-        <h1 style="font-size: 5vw; margin-left: 22%; line-height: 4vw;">Estancia</h1>
-        <h2 style="font-size: 2vw; font-style: italic; margin-left: 22%;">Envida</h2>
-        <h3>Incluye</h3>
-        <h3 style="top: 49%;">Incluye</h3>
-        <h3 style="top: 78%">Incluye</h3>
-        <h4 >8:00 a 18:00</h4>
-        <h4 style="top: 46%;">24 hrs.</h4>
-        <h4 style="top: 75%;">Mensual</h4>
-
-        <div class="banner">Estancia de día</div>
-        <div class="banner" style="top: 46%;">Día Envida</div>
-        <div class="banner" style="top: 75%;">Permanente</div>
-
-        <ul>
-            <li>Alimentos: Desayuno, comida, y una colación</li>
-            <li>Actividades: Terapia de movimiento, ocupacional, lectura, cine, etc.</li>
-            <li>Sevicio de enfermería y paramédicos durante su estancia</li>
-            <li>Vigilancia</li>
-        </ul>
-        <ul style="margin-top:19%;">
-            <li>Alimentos: Desayuno, comida, cena y dos colaciones</li>
-            <li>Actividades: Terapia de movimiento, ocupacional, lectura, cine, etc.</li>
-            <li>Servicio de consulta de medicina general (de ser requerida)</li>
-            <li>Habitación</li>
-            <li>Sevicio de enfermería y paramédicos durante su estancia</li>
-            <li>Vigilancia 24 horas.</li>
-        </ul>
-        <ul style="margin-top: 17%;">
-            <li>Plan médico integral completo</li>
-            <li>Actividades: Terapia de movimiento, ocupacional, lectura, cine, etc.</li>
-            <li>Todos los servicios de estancia</li>
-            <li>Suministro de medicamentos</li>
-            <li>Habitación.</li>
-        </ul>
-        
-        <img class="one" src="../sources/images/estancia/Es-01.JPG" alt="img1" style="
-        top: 0;
-        left: 65%;
-        ">
-        <img class="one" src="../sources/images/estancia/Es-02.JPG" alt="img2" style="
-        left: 75%;
-        top: 14%;
-
-        ">
-        <img class="one" src="../sources/images/estancia/Es-03.JPG" alt="img3" style="
-        top: 60%;
-        left: 75%;
-        ">
-        <img class="one" src="../sources/images/estancia/Es-04.JPG" alt="img4" style="
-        top: 74%;
-        left: 65%;
-        ">
-
-        <img class="fondo" src="../sources/images/logo.png" alt="logo envida">
-    
+            </div>
+            <div class="row my-2">
+                <div class="col">
+                    <a class="nav-link" href="privacy.html">Aviso de privacidad.</a>
+                </div>
+            </div>
+        </div>
     </div>
 
-<footer>
-    <section class="main-footer">
-    <img id="mega" src="../sources/images/footer/H-09-mega.png" alt="Mega Salud">
-    <img id="turismo" src="../sources/images/footer/H-04 -turis.png" alt="Turismo de Salud">
-    <ul class="footer-nav1">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="about.html">Acerca de</a></li>
-        <li><a href="estancia.html">Plan de estancia</a></li>
-        <li><a href="instalaciones.html">Instalaciones</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </ul>
+    <div class="row justify-content-center text-center" style="background-color: white;">
+        <div class="col-2 col-md-1"><img class="img-fluid" src="../static/img/convenios/H-C-1.png" alt="Forma radical">
+        </div>
+        <div class="col-2 col-md-1"><img class="img-fluid" src="../static/img/convenios/H-C-2.jpg" alt="Saludent">
+        </div>
+        <div class="col-3 col-md-1 pt-2"><img class="img-fluid" src="../static/img/convenios/H-C-3.png"
+                alt="Blue Point">.
+        </div>
+        <div class="col-3 col-md-1 pt-1 "><img class="img-fluid" src="../static/img/convenios/uaem.png" alt="UAEM">
+        </div>
+        <div class="col-2 col-md-1"><img class="img-fluid" src="../static/img/convenios/H-C-5.png" alt="Turismor">
+        </div>
+    </div>
+</footer>
 
-    <ul class="footer-nav2">
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="vacantes.html">Vacantes</a></li>
-        <li><a href="referidos.html">Referidos Envida</a></li>
-    </ul>
-    <ul class="footer-redes">
-        <a href="https://instagram.com/envidaresidencia?igshid=MzRlODBiNWFlZA==" target="_blank"><img class="footer-rs-ico" src="../sources/images/H-IG.png" alt="IG"></a>
-        <a href="https://www.facebook.com/ResidenciaEnvida?mibextid=ZbWKwL" target="_blank"><img class="footer-rs-ico" src="../sources/images/H-FB.png" alt="FB"></a>   
-        <a href="https://www.tiktok.com/@residenciaenvida?_op=1&_r=1&_t=8d2iyGTIJZ0" target="_blank"><img class="footer-rs-ico" src="../sources/images/H-TT.png" alt="Tiktok"></a>
-    </ul>
-    <a class="privacidad"href="privacy.html">Aviso de Privacidad</a>
-    <p>Av. Miguel Hidalgo #30 col. Centro, Temixco, Mor.</p>
+<!--Fin del footer-->
 
-    </section>
-    <section class="convenios">
-        <img id="FR" src="../sources/images/footer/H-C-1.png" alt="Forma Radical">
-        <img id="SD" src="../sources/images/footer/H-C-2.jpg" alt="SaluDent">
-        <img id="BP" src="../sources/images/footer/H-C-3.png" alt="Blue Point">
-        <img id="UAEM" src="../sources/images/footer/H-C-4.svg" alt="UAEM">
-        <img id="TM" src="../sources/images/footer/H-C-5.png" alt="TurisMor">
-    </section>
-    
-
-</footer> <!-- / #main-footer -->
-</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 
 
-
-<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-<script src="../sources/menu4.js"></script>
 </body>
 
 </html>
