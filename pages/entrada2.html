@@ -2,93 +2,277 @@
 <html lang="es">
 
 <head>
-    <link rel="icon" href="../favicon.ico" type="image/x-icon" sizes="16px">
-    <link rel="stylesheet" href="../sources/styles/fonts.css">
-    <link rel="stylesheet" href="../sources/styles/styles.css">
-    <link rel="stylesheet" href="../sources/styles/blocks.css">
-    <link rel="stylesheet" href="../sources/styles/slider.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Contacto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!--bootstrap 5.3.1-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Google Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,-25" />
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="../static/style.css">
+
+    <!--FAVICON-->
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/img/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
 </head>
 
 <body>
-    <header id="main-header">
-        <div id="logo-header">
-            <a href="../index.html"><img src="../sources/images/logo.png" alt="logo Envida"></a>
+    <div class="container-boton">
+        <a href="https://wa.me/527776002594" target="_blank">
+            <img class="boton" src="../static/img/wabut.png" alt="">
+        </a>
+    </div>
+
+    <!-- Header -->
+    <nav class="navbar border-bottom border-3 sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="col"><a href="../index.html">
+                    <img src="../static/img/headerFooter/logo.png" alt="Logo Envida" width="100" height="100">
+                </a></div>
+            <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav col">
+                    <a class="nav-link mx-4 ms-md-5" aria-current="page" href="../pages/about.html"><i
+                            class="bi bi-info-circle"></i> Acerca
+                        de</a>
+                    <a class="nav-link mx-4" aria-current="page" href="../pages/instalaciones.html"><i
+                            class="bi bi-buildings"></i>
+                        Instalaciones</a>
+                    <a class="nav-link mx-4" aria-current="page" href="../pages/estancia.html"><i
+                            class="bi bi-houses"></i>
+                        Estancia</a>
+                    <a class="nav-link mx-4" aria-current="page" href="../pages/blog.html"><i
+                            class="bi bi-newspaper"></i>
+                        Blog</a>
+                    <a class="nav-link mx-4 me-md-2" aria-current="page" href="../pages/contacto.html"><i
+                            class="bi bi-telephone-outbound"></i>
+                        Contacto</a>
+                    <div class="col text-center mt-2">
+                        <a class="mx-2" href="https://www.facebook.com/ResidenciaEnvida?mibextid=ZbWKwL" target="blank"
+                            style="text-decoration: none;">
+                            <img src="../static/img/headerFooter/H-FB.png" alt="" width="24px" height="24px">
+                        </a>
+                        <a class="mx-2" href="https://instagram.com/residenciaenvida?igshid=MzRlODBiNWFlZA=="
+                            target="blank" style="text-decoration: none;">
+                            <img src="../static/img/headerFooter/H-IG.png" alt="" width="24px" height="24px">
+                        </a>
+                        <a class="mx-2" href="https://www.tiktok.com/@residenciaenvida?_op=1&_r=1&_t=8d2iyGTIJZ0"
+                            target="blank" style="text-decoration: none;">
+                            <img src="../static/img/headerFooter/H-TT.png" alt="" width="24px" height="24px">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="menu-bar">
-            <a href="#" class="bt-menu"><span class="icon-menu"></span>Menu</a>
+    </nav>
+
+    <!--End Header-->
+
+    <div class="container text-center py-4">
+        <div class="card text-bg-dark">
+            <img style="height: 20vw; object-position: 100% 30%; filter:brightness(60%) "
+                src="../static/img/blog/B-02.jpg" class="card-img object-fit-cover" alt="...">
+            <div class="card-img-overlay">
+                <p class="text-start" style="font-size: 5vw; font-weight: bold;">Alimentación saludable para adultos
+                    mayores
+                </p>
+            </div>
         </div>
-        <!-- / #logo-header -->
-        <nav class="enlaces">
-            <ul>
-                <li><a href="../pages/about.html"><span class="icon-info"></span><br>Acerca de</a></li>
-                <li><a href="../pages/instalaciones.html"><span class="icon-office"></span><br>Instalaciones</a></li>
-                <li><a href="../pages/estancia.html"><span class="icon-nature_people"></span><br>Estancia</a></li>
-                <li><a href="../pages/blog.html"><span class="icon-newspaper"></span><br>Blog</a></li>
-                <li><a href="../pages/contacto.html"><span class="icon-mail4"></span><br>Contacto</a></li>
-            </ul>
-        </nav><!-- / nav -->
-        <div class="redes">
-            <div class="logo-rrss"><a href="https://instagram.com/envidaresidencia?igshid=MzRlODBiNWFlZA==" target="_blank"><img class="rrss"
-                src="../sources/images/H-IG.png" alt="Instagram"></li></a></div>
-            <div class="logo-rrss"><a href="https://www.facebook.com/ResidenciaEnvida?mibextid=ZbWKwL" target="_blank"><img class="rrss"
-                src="../sources/images/H-FB.png" alt="Facebook"></li></a></div>
-            <div class="logo-rrss"><a href="https://www.tiktok.com/@residenciaenvida?_op=1&_r=1&_t=8d2iyGTIJZ0" target="_blank"><img class="rrss"
-                src="../sources/images/H-TT.png" alt="Tiktok"></li></a></div>
+
+        <div class="row text-start" style="padding: 1% 6%; font-size: 2vw;">
+            <p>Una alimentación saludable es fundamental en todas las etapas de la vida, pero adquiere una
+
+                importancia aún mayor en la tercera edad. En Envida Residencia para adultos mayores, nos
+
+                preocupamos por ofrecer a nuestros residentes una alimentación equilibrada y adaptada a sus
+
+                necesidades nutricionales individuales. En este artículo, exploraremos la importancia de una
+
+                alimentación saludable para los adultos mayores y cómo en Envida nos aseguramos de cuidar el
+
+                bienestar a través de una nutrición adecuada.</p>
+
+
+
+            <p><span class="fw-bold">Variedad y equilibrio:</span> <br>
+
+
+                En Envida, entendemos que una alimentación saludable debe incluir una variedad de alimentos
+
+                para obtener los nutrientes necesarios. Nuestro personal de cocina prepara menús diversificados,
+
+                que incluyen frutas, verduras, proteínas, granos integrales y lácteos bajos en grasa. Además,
+
+                adaptamos las comidas para satisfacer las necesidades dietéticas individuales, como dietas bajas
+
+                en sodio o en azúcar según las necesidades médicas de nuestros residentes.
+
+            </p>
+
+
+
+            <p><span class="fw-bold">Nutrientes esenciales:</span><br>
+
+                A medida que envejecemos, nuestro cuerpo puede tener necesidades nutricionales diferentes. En
+
+                Envida, nos aseguramos de proporcionar a nuestros residentes los nutrientes esenciales para
+
+                mantener una buena salud. Promovemos el consumo de alimentos ricos en calcio y vitamina D
+
+                para fortalecer los huesos, así como alimentos ricos en vitamina B12 para mantener la función
+
+                cognitiva. Además, nos enfocamos en alimentos que contienen antioxidantes, como frutas y
+
+                verduras coloridas, para promover la salud celular y prevenir enfermedades.</p>
+
+
+
+            <p><span class="fw-bold">Hidratación adecuada:</span><br>
+                La hidratación es clave para el bienestar en todas las edades, pero especialmente en la tercera
+
+                edad. Nuestros residentes tienen acceso a agua fresca en todo momento y fomentamos el
+
+                consumo regular de líquidos. También ofrecemos opciones de infusiones de hierbas y jugos
+
+                naturales para mantener una adecuada hidratación.
+
+            </p>
+
+            <p> <span class="fw-bold">Ambiente agradable para las comidas:</span><br>
+
+                Sabemos que el entorno en el que se consumen las comidas es importante para fomentar una
+
+alimentación saludable. Creamos un ambiente acogedor y agradable en nuestro comedor, donde
+
+los residentes pueden disfrutar de sus comidas en compañía de otros. Promovemos la
+
+socialización durante las comidas, lo cual ayuda a fomentar una alimentación adecuada y un
+
+sentido de comunidad. Además durante su comida pueden disfrutar de la vista de nuestros bellos
+
+jardines y la fauna local que en ellos habita.</p>
+
+
+
+            <p>En Envida Residencia para adultos mayores, nos preocupamos por el bienestar integral de
+
+                nuestros residentes, y la alimentación saludable es una parte fundamental de ello. Por eso
+                
+                ponemos especial atención en las necesidades nutricionales individuales de nuestros residentes,
+                
+                en su hidratación adecuada, para garantizar la estabilidad de su salud.
+                
+                </p>
         </div>
-        
-    </header>
-
-<section class="content">
 
 
-<footer>
-    <section class="main-footer">
-    <img id="mega" src="../sources/images/footer/H-09-mega.png" alt="Mega Salud">
-    <img id="turismo" src="../sources/images/footer/H-04 -turis.png" alt="Turismo de Salud">
-    <ul class="footer-nav1">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="about.html">Acerca de</a></li>
-        <li><a href="estancia.html">Plan de estancia</a></li>
-        <li><a href="instalaciones.html">Instalaciones</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-
-    <ul class="footer-nav2">
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="vacantes.html">Vacantes</a></li>
-        <li><a href="referidos.html">Referidos Envida</a></li>
-    </ul>
-    <ul class="footer-redes">
-        <a href="https://instagram.com/envidaresidencia?igshid=MzRlODBiNWFlZA==" target="_blank"><img class="footer-rs-ico" src="../sources/images/H-IG.png" alt="IG"></a>
-        <a href="https://www.facebook.com/ResidenciaEnvida?mibextid=ZbWKwL" target="_blank"><img class="footer-rs-ico" src="../sources/images/H-FB.png" alt="FB"></a>   
-        <a href="https://www.tiktok.com/@residenciaenvida?_op=1&_r=1&_t=8d2iyGTIJZ0" target="_blank"><img class="footer-rs-ico" src="../sources/images/H-TT.png" alt="Tiktok"></a>
-    </ul>
-    <a class="privacidad"href="privacy.html">Aviso de Privacidad</a>
-    <p>Av. Miguel Hidalgo #30 col. Centro, Temixco, Mor.</p>
-
-    </section>
-    <section class="convenios">
-        <img id="FR" src="../sources/images/footer/H-C-1.png" alt="Forma Radical">
-        <img id="SD" src="../sources/images/footer/H-C-2.jpg" alt="SaluDent">
-        <img id="BP" src="../sources/images/footer/H-C-3.png" alt="Blue Point">
-        <img id="UAEM" src="../sources/images/footer/H-C-4.svg" alt="UAEM">
-        <img id="TM" src="../sources/images/footer/H-C-5.png" alt="TurisMor">
-    </section>
-    
-
-</footer> <!-- / #main-footer -->
-</section class="content">
+    </div>
 
 
 
-<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-<script src="../sources/menu4.js"></script>
+
+
+    <!-- Footer -->
+
+    <footer class="container-fluid pt-2 d-block">
+        <div class="row py-2" style="background-color: #A6B99F; font-size:1.8vw;">
+            <div class="col-6">
+                <div class="row  my-3 justify-content-center">
+                    <div class="col-5 col-lg-3"><a href=""><img class="img-fluid"
+                                src="../static/img/headerFooter/H-09-mega.png" alt="Mega Salud"></a></div>
+                    <div class="col-5 col-lg-3"><a href=""><img class="img-fluid"
+                                src="../static/img/headerFooter/H-04-turis.png" alt="Turismo"></a></div>
+                </div>
+                <div class="row text-center"><a class="nav-link" href="http://" target="_blank"
+                        rel="noopener noreferrer">Av.
+                        Miguel Hidalgo #30 col. Centro,
+                        Temixco, Mor.</a></div>
+            </div>
+            <div class="col-3">
+
+                <ul class="list-unstyled">
+                    <li><a class="nav-link" style="width: fit-content;" href="../index.html">Inicio</a></li>
+                    <li><a class="nav-link" style="width: fit-content;" href="../pages/about.html">Acerca de</a></li>
+                    <li><a class="nav-link" style="width: fit-content;" href="../pages/estancia.html">Plan de
+                            Estancia<a>
+                    </li>
+                    <li><a class="nav-link" style="width: fit-content;"
+                            href="../pages/instalaciones.html">Instalaciones</a>
+                    </li>
+                    <li><a class="nav-link" style="width: fit-content;" href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <div class="row">
+                    <ul class="list-unstyled">
+                        <li><a class="nav-link" style="width: fit-content;" href="../pages/blog.html">Blog</a></li>
+                        <li><a class="nav-link" style="width: fit-content;" href="../pages/vacantes.html">Vacantes</a>
+                        </li>
+                        <li><a class="nav-link" style="width: fit-content;" href="../pages/referidos.html">Referidos
+                                Envida</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col col-md-2">
+                        <a href="https://www.facebook.com/ResidenciaEnvida?mibextid=ZbWKwL" target="blank"><img
+                                class="img-fluid" src="../static/img/headerFooter/H-FB.png" alt="Facebook"></a>
+                    </div>
+                    <div class="col col-md-2 mx-md-3">
+                        <a href="https://instagram.com/residenciaenvida?igshid=MzRlODBiNWFlZA==" target="blank"><img
+                                class="img-fluid me-sm-4" src="../static/img/headerFooter/H-IG.png" alt="Instagram"></a>
+                    </div>
+                    <div class="col col-md-2">
+                        <a href="https://www.tiktok.com/@residenciaenvida?_op=1&_r=1&_t=8d2iyGTIJZ0" target="blank"><img
+                                class="img-fluid" src="../static/img/headerFooter/H-TT.png" alt="TikTok"></a>
+                    </div>
+
+                </div>
+                <div class="row my-2">
+                    <div class="col">
+                        <a class="nav-link" href="../pages/privacy.html">Aviso de privacidad.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center text-center" style="background-color: white;">
+            <div class="col-2 col-md-1"><img class="img-fluid" src="../static/img/convenios/H-C-1.png"
+                    alt="Forma radical">
+            </div>
+            <div class="col-2 col-md-1"><img class="img-fluid" src="../static/img/convenios/H-C-2.jpg" alt="Saludent">
+            </div>
+            <div class="col-3 col-md-1 pt-2"><img class="img-fluid" src="../static/img/convenios/H-C-3.png"
+                    alt="Blue Point">.
+            </div>
+            <div class="col-3 col-md-1 pt-1 "><img class="img-fluid" src="../static/img/convenios/uaem.png" alt="UAEM">
+            </div>
+            <div class="col-2 col-md-1"><img class="img-fluid" src="../static/img/convenios/H-C-5.png" alt="Turismor">
+            </div>
+        </div>
+    </footer>
+
+    <!--Fin del footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
